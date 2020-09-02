@@ -34,8 +34,6 @@ namespace Hpdi.Vss2Git
         private string initialArguments;
         private bool shellQuoting;
         private bool needsCommit;
-        private string commandFile;
-        private TextWriter commandWriter;
         private readonly Stopwatch stopwatch = new Stopwatch();
 
         private const char QuoteChar = '"';
@@ -203,14 +201,6 @@ namespace Hpdi.Vss2Git
 
         public int Execute(ProcessStartInfo startInfo, out string stdout, out string stderr)
         {
-            if (commandWriter == null && !string.IsNullOrEmpty(commandFile))
-            {
-                commandWriter = new StreamWriter(commandFile);
-            }
-            if (commandWriter != null)
-            {
-                commandWriter.WriteLine("{0} {1}", startInfo.FileName, startInfo.Arguments);
-            }
             Logger.WriteLine("Executing: {0} {1}", startInfo.FileName, startInfo.Arguments);
             Stopwatch.Start();
             try
@@ -374,10 +364,6 @@ namespace Hpdi.Vss2Git
 
         public void Exit()
         {
-            if (commandWriter != null)
-            {
-                commandWriter.Close();
-            }
         }
 
         public bool Commit(string authorName, string authorEmail, string comment, DateTime localTime)

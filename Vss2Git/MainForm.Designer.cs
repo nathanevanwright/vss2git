@@ -130,7 +130,7 @@
             // vssDirButton
             // 
             this.vssDirButton.Image = ((System.Drawing.Image)(resources.GetObject("vssDirButton.Image")));
-            this.vssDirButton.Location = new System.Drawing.Point(531, 17);
+            this.vssDirButton.Location = new System.Drawing.Point(90, 17);
             this.vssDirButton.Name = "vssDirButton";
             this.vssDirButton.Size = new System.Drawing.Size(23, 23);
             this.vssDirButton.TabIndex = 2;
@@ -188,7 +188,7 @@
             // 
             this.vssDirTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.vssDirTextBox.Location = new System.Drawing.Point(90, 19);
+            this.vssDirTextBox.Location = new System.Drawing.Point(119, 19);
             this.vssDirTextBox.Name = "vssDirTextBox";
             this.vssDirTextBox.Size = new System.Drawing.Size(435, 20);
             this.vssDirTextBox.TabIndex = 1;
@@ -309,7 +309,7 @@
             // outDirButton
             // 
             this.outDirButton.Image = ((System.Drawing.Image)(resources.GetObject("outDirButton.Image")));
-            this.outDirButton.Location = new System.Drawing.Point(531, 17);
+            this.outDirButton.Location = new System.Drawing.Point(90, 17);
             this.outDirButton.Name = "outDirButton";
             this.outDirButton.Size = new System.Drawing.Size(23, 23);
             this.outDirButton.TabIndex = 2;
@@ -565,7 +565,7 @@
             // 
             this.outDirTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.outDirTextBox.Location = new System.Drawing.Point(90, 19);
+            this.outDirTextBox.Location = new System.Drawing.Point(119, 19);
             this.outDirTextBox.Name = "outDirTextBox";
             this.outDirTextBox.Size = new System.Drawing.Size(435, 20);
             this.outDirTextBox.TabIndex = 1;
